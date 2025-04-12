@@ -1,91 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAJ-DARSHAN</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="braj.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRAJ-DARSHAN</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="braj.css" />
+
+  <!-- Locomotive Scroll CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+  />
 </head>
 <body>
-    <!-- <div id="main"> 
-        <div id="page"></div>
-        <div id="page1"></div>
-    </div> -->
-    <div id="nav">
-        <img src="images/logo2.png" alt="BRAJ-DARSHAN Logo">
-            <button class="nav-button"><h4>home</h4></button>
-            <button class="nav-button"><h4>services</h4></button>
-            <button class="nav-button"><h4>contact</h4></button>
-            <button class="nav-button"><h4>about</h4></button>
-            <button class="nav-button"><h4>login</h4></button>
+
+  <video autoplay loop muted src="hero section/India-360-v2.mp4"></video>
+
+  <div id="main">
+    <!-- 🧭 Navigation Bar (Sticky with Locomotive Scroll) -->
+    <div id="nav" data-scroll data-scroll-sticky data-scroll-target="#main">
+      <img src="images/logo2.png" alt="BRAJ-DARSHAN Logo" />
+      <button class="nav-button"><h4>home</h4></button>
+      <button class="nav-button"><h4>services</h4></button>
+      <button class="nav-button"><h4>contact</h4></button>
+      <button class="nav-button"><h4>about</h4></button>
+      <button class="nav-button"><h4>login</h4></button>
     </div>
 
-    
-        
-    
 
-    <video autoplay loop muted src="hero section/India-360-v2.mp4"></video>
+   
 
-
-    <div id="hero">
+    <!-- 🔽 Main content wrapper -->
+    <div id="down">
+      <!-- 🎥 Hero Section with Video Background -->
+      <section id="hero">
+       
         <div class="box">
           <p class="luxury-tag">Experience Luxury Travel</p>
-          <h1 class="main-heading">Explore the India<br>Like Never Before</h1>
+          <h1 class="main-heading">Explore the India<br />Like Never Before</h1>
           <p class="cover-line">
-            Curated journeys to the India's most famous monuments. Let us<br>
+            Curated journeys to the India's most famous monuments. Let us<br />
             transform your travel dreams into unforgettable memories.
           </p>
-          
-          <!-- Buttons Start -->
           <div class="button-group">
             <a href="#plan" class="btn primary-btn">Start Planning</a>
             <a href="#video" class="btn secondary-btn">Watch Video</a>
           </div>
-          <!-- Buttons End -->
         </div>
+      </section>
+
+
+
+   <!-- ✅ Upgraded BRAJ-DARSHAN Attractions Section -->
+<section id="braj-attractions">
+  <h2 class="section-heading">Attractions <br><span>worth a thousand stories</span></h2>
+  <div class="carousel-wrapper">
+    <button class="arrow left" onclick="scrollAttractions(-1)"><i class="fa-solid fa-angle-left"></i></button>
+
+    <div class="attraction-scroll" id="attraction-scroll">
+      <!-- 25 cards -->
+      <div class="attraction-card" style="background-image: url('https://th.bing.com/th/id/OIP.hyRb2IXsEZWRWqMwgYyYyAHaFj?rs=1&pid=ImgDetMain');">
+        <h3>red fort</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://th.bing.com/th/id/OIP.D9mZfKsPAP9I-Pb92x3K6QHaE8?rs=1&pid=ImgDetMain');">
+        <h3>Prem Mandir</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://c8.alamy.com/comp/2AYJCWK/krishna-temple-at-the-keshi-ghat-on-yamuna-river-in-vrindavan-near-mathura-city-in-uttar-pradesh-state-of-india-2AYJCWK.jpg');">
+        <h3>Yamuna Ghats</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://wallpapercave.com/wp/wp2037798.jpg');">
+        <h3>Taj Mahal</h3>
+      </div>
+      <!-- Add more cards -->
+
+     
+      <div class="attraction-card" style="background-image: url('https://static.vecteezy.com/system/resources/previews/011/084/232/large_2x/full-picture-of-hawa-mahal-of-rajasthan-photo.jpg');">
+        <h3>Hawa Mahal</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://c8.alamy.com/comp/R9FDE0/mathura-india-11-april-2016-big-idol-of-hindu-goddess-vaishno-devi-at-vrindavan-mathura-uttar-pradesh-india-R9FDE0.jpg');">
+        <h3>Maa Vaishno Devi</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://th.bing.com/th/id/OIP.fpXfe34YHY1Jn7SL7xBY4AHaL5?rs=1&pid=ImgDetMain');">
+        <h3>Shri Banke Bihari Mandir</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/123/534/desktop-wallpaper-char-dham-yatra-11-nights-chardham-yatra.jpg');">
+        <h3>chaar dhaam</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://iptb.b-cdn.net/wp-content/uploads/2019/04/Darshani-Darwaza.jpg');">
+        <h3>maa durga temple</h3>
+      </div>
+      <div class="attraction-card" style="background-image: url('https://th.bing.com/th/id/R.0098da8388d693a25a483015e5121612?rik=ur3rrzvSMX7Xqg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-VNuCIatXL2c%2fUdbga1b8IbI%2fAAAAAAAAKtM%2fmxOPg8W6AFA%2fs1600%2fmathura-lord-krishna-janmabhoomi.jpg&ehk=%2f%2b%2fl15VywETpSBEMLPGuLmgTu8E92zmAJ%2faVf8rRvlo%3d&risl=&pid=ImgRaw&r=0');">
+        <h3>janm bhoomi</h3>
       </div>
 
-          <!-- page-2 -->
+    </div>
 
-      <div id="page2">
+    <button class="arrow right" onclick="scrollAttractions(1)"><i class="fa-solid fa-angle-right"></i></button>
+  </div>
+  <div class="discover-btn">
+    <a href="#" class="btn primary-btn">Discover More</a>
+  </div>
+</section>
 
-        <div id="scroller">
 
-          <div id="scroller-in">
-              <h4>TOPTRACER RANGE</h4>
-              <h4>Golf Lessons</h4>
-              <h4>Adventure Golf</h4>
-              <h4>Coffee Shop</h4>
-              <h4>Leagues</h4>
-          </div>
-
-          <div id="scroller-in">
-              <h4>TOPTRACER RANGE</h4>
-              <h4>Golf Lessons</h4>
-              <h4>Adventure Golf</h4>
-              <h4>Coffee Shop</h4>
-              <h4>Leagues</h4>
-          </div>
-
-        </div>
-
+  <!-- 🏌️ Scrolling Text Marquee -->
+  <section id="page2">
+    <div id="scroller">
+      <div id="scroller-in">
+        <h4>Popular Destinations</h4>
+        <h4>Adventure Tours</h4>
+        <h4>Famous Monuments</h4>
+        <h4>Luxury Hotels</h4>
+        <h4>Comfortable Travel</h4>
       </div>
-      
-      
+
+      <div id="scroller-in">
+        <h4>Popular Destinations</h4>
+        <h4>Adventure Tours</h4>
+        <h4>Famous Monuments</h4>
+        <h4>Luxury Hotels</h4>
+        <h4>Comfortable Travel</h4>
+      </div>
+    </div>
+  </section>
 
 
-    
+  <section id="about-us" class="about-us-section">
+    <div class="about-content">
+      <div class="about-left">
+        <img src="images/project image.png" alt="Indian Landmarks" class="about-img" />
+      </div>
+      <div class="about-right">
+        <h2 class="section-label">ADVENTURE AWAITS</h2>
+        <h3>Your Journey, Our Passion</h3>
+        <p>
+          We believe travel is more than just visiting new places; it's about creating memories, 
+          experiencing diverse cultures, and discovering the wonders of India. With years of experience 
+          in the travel industry, our dedicated team is committed to providing exceptional travel experiences 
+          tailored to your unique desires and needs.
+        </p>
+        <div class="features">
+          <p>✔ Budget-Friendly</p>
+          <p>✔ Luxurious Getaways</p>
+          <p>✔ Trusted Local Guides</p>
+        </div>
+        <button class="learn-more-btn">Top Review ➜</button>
+        <div class="review-section">
+          <img src="hero section/home-journey2.jpg" alt="User" class="review-user" />
+          <div class="rating">
+            <strong>4.7 Star Rating</strong>
+            <p>Based on 3,571 Reviews</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  
 
+  
+        <!-- 💚 Green Divider with Subscription Text -->
+        <div id="green-div">
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+          <h4>Sign up for Sidcup News and Special Offers Straight to Your Inbox</h4>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="braj.js"></script>
+    <!-- 💬 Testimonial Section -->
+    <div id="page3">
+      <p>
+       We believe that travel is more than just visiting new places; it's about creating memories, experiencing diverse cultures, and discovering the wonders of the world. With years of experience in the travel industry, our dedicated team is committed to providing exceptional travel experiences tailored to your unique desires and needs.
+      </p>
+      <img
+        id="colon1"
+        src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+        alt=""
+      />
+      <img
+        id="colon2"
+        src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+        alt=""
+      />
+    </div>
 
+    <!-- ⛳ Page 4 Image Sections -->
+    <div id="page4">
+      <h1>WHAT ARE YOU WAITING FOR?</h1>
+      <div class="elem">
+        <h2>TOPTRACER RANGE</h2>
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+          alt=""
+        />
+      </div>
+      <div class="elem">
+        <h2>GOLF LESSON</h2>
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+          alt=""
+        />
+      </div>
+      <div class="elem">
+        <h2>ADVENTURE GOLF</h2>
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- 🦶 Footer Section -->
+    <footer id="footer">
+      <img
+        src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
+        alt=""
+      />
+
+      <div id="f1">
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg"
+          alt=""
+        />
+      </div>
+
+      <div id="f2">
+        <h3>TOPTRACER RANGES</h3>
+        <h3>GOLF LESSONS</h3>
+        <h3>ADVENTURE GOLF</h3>
+      </div>
+
+      <div id="F3">
+        <h3>COFFEE SHOP</h3>
+        <h3>LEAGUES</h3>
+        <h3>CONTACT US</h3>
+      </div>
+
+      <div id="f4">
+        <h4>
+          A20, Sidcup Bypass<br />
+          Chislehurst<br />
+          Kent<br />
+          BR7 6RP<br />
+          Tel: 0208 309 0181<br />
+          Get Directions
+        </h4>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 📜 Scripts -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+ 
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  
+  <script src="braj.js"></script>
 </body>
 </html>
